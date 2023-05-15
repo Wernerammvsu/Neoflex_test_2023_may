@@ -1,0 +1,35 @@
+.d-flex {
+    justify-content: space-between;
+}
+
+.card-img-top {
+    width: fit-content;
+    height: 58%;
+    align-self: center;
+}
+
+.card {
+    width: 350px;
+    height: 350px;
+    background: #FFFFFF;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
+    border-radius: 30px;
+}
+
+span {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 17px;
+    line-height: 21px;
+    display: flex;
+    align-items: center;
+}
+
+.old-price {
+    font-size: 13px;
+    line-height: 16px;
+    text-decoration-line: line-through;
+    color: #FFCE7F;
+    place-content: center;
+}

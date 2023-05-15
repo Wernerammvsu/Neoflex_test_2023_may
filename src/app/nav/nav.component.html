@@ -1,0 +1,23 @@
+<header>
+  <div class="px-3 py-2">
+    <div class="container">
+      <div class="d-flex flex-wrap align-items-center">
+        <a class="logo text-decoration-none" routerLink="/">QPICK</a>
+        <ul class="d-flex">
+          <li class="m-4">
+            <a href="#" class="position-relative">
+              <img src="assets/icons/like.png" alt="favorites">
+              <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-warning">2</span>
+            </a>
+          </li>
+          <li class="m-4">
+            <a routerLink="/cart" class="position-relative">
+              <img src="assets/icons/cart.png" alt="cart">
+              <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-warning">{{productService.productsInCart.length === 0 ? '' : productService.productsInCart.length}}</span>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</header>

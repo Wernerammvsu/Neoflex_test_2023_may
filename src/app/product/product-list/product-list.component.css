@@ -1,0 +1,11 @@
+.d-flex {
+    flex-wrap: wrap;
+}
+
+.d-flex > div {
+    text-align: -webkit-center;
+}
+
+h3 {
+    color: #838383;
+}

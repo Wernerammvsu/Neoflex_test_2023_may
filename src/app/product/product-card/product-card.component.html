@@ -1,0 +1,19 @@
+<div class="card m-3 p-1">
+  <img src="{{product.thumbnailUrl}}" class="card-img-top m-2 cursor-active" alt="thumbnail">
+  <div class="card-body">
+    <div class="d-flex my-3">
+      <span class="card-title">{{product.name}}</span>
+      <div>
+        <span style="color: #FFA542;">{{product.price}} ₽</span>
+        <span *ngIf="product.oldPrice" class="old-price">{{product.oldPrice}} ₽</span>
+      </div>
+    </div>
+    <div class="d-flex my-3">
+      <span style="color: #838383;">
+        <img src="assets/icons/star.png" class="icon me-2" alt="star">
+        <span>{{product.rating}}</span>
+      </span>
+      <button class="btn btn-outline-secondary m-0 p-0 border-0 text-dark shadow-none" (click)="addToCart()"><span>Купить</span></button>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,16 @@
+<div class="card m-3 p-1">
+    <div class="img-wrapper">
+      <img src="{{cartItem.product.thumbnailUrl}}" class="card-img-top m-2 cursor-active" alt="thumbnail">
+      <button class="btn border-0 shadow-none ms-5" (click)="plus()"><img src="assets/icons/plus.png" alt="plus"></button>
+      {{cartItem.quantity}}
+      <button class="btn border-0 shadow-none" (click)="minus()"><img src="assets/icons/minus.png" alt="minus"></button>
+    </div>
+    <div class="card-body m-4">
+      <div class="d-flex my-3" style="flex-direction: column;">
+        <div class="card-title fw-bold">{{cartItem.product.name}}</div>
+        <div class="text-muted">{{cartItem.product.price}} ₽</div>
+      </div>
+    </div>
+    <button class="btn btn-outline-danger btn-sm border-0 btn-delete shadow-none" (click)="delete()"><img src="assets/icons/cart-delete.png"></button>
+    <span class="item-price">{{cartItem.product.price * cartItem.quantity}}</span>
+</div>

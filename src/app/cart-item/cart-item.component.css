@@ -1,0 +1,28 @@
+.card {
+    background: #FFFFFF;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
+    border-radius: 30px;
+    flex-direction: row;
+}
+
+.img-wrapper {
+    width: 50%;
+}
+.card-body {
+    align-self: center;
+}
+
+.btn-delete {
+    position: absolute;
+    right: 1%
+}
+
+.item-price {
+    position: absolute;
+    right: 5%;
+    bottom: 5%;
+}
+
+.card-img, .card-img-bottom, .card-img-top {
+    width: auto;
+}
